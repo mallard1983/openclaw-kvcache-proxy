@@ -1,0 +1,16 @@
+# Claude Code local settings
+.claude/
+
+# Log files — contain conversation content and local system paths
+*.log
+oldproxylogs/
+
+# llama-server terminal output — contains local model paths and usernames
+llama*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
