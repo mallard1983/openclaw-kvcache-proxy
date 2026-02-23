@@ -109,7 +109,7 @@ def normalize_input(input_items: list) -> tuple[list, dict]:
         content = item.get("content")
 
         # System prompt: content is a plain string
-        if role == "system" and isinstance(content, str):
+        if (role == "system" or role == "developer") and isinstance(content, str):
             new_text, ts_n, mid_n = _strip_text(content)
             if new_text != content:
                 item["content"] = new_text
